@@ -1,0 +1,19 @@
+{
+  "name": "fylo-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Befeepilf/Fylo-Website.git"
+  },
+  "author": "Befeepilf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Befeepilf/Fylo-Website/issues"
+  },
+  "homepage": "https://github.com/Befeepilf/Fylo-Website#readme"
+}
