@@ -1,31 +1,9 @@
 {
-  "name": "fylo-website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "./node_modules/.bin/parcel serve src/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Befeepilf/Fylo-Website.git"
-  },
-  "author": "Befeepilf",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Befeepilf/Fylo-Website/issues"
-  },
-  "homepage": "https://github.com/Befeepilf/Fylo-Website#readme",
+  "name": "Fylo-Website",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "parcel": "^2.0.0-alpha.3.2",
+    "parcel": "next",
     "postcss": "^7.0.27",
-    "postcss-modules": "^2.0.0",
-    "posthtml": "^0.13.0",
-    "posthtml-img-autosize": "^0.1.4",
-    "posthtml-w3c": "^0.9.0",
     "sass": "^1.26.5"
-  },
-  "dependencies": {}
+  }
 }

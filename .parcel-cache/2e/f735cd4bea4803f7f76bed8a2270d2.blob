@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+h1, h2 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.heading-big {
+  font-size: 2.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta {
+  position: relative;
+  padding: 14px 77px;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(to left, #339ecc, #65e2d9);
+  border: none;
+  border-radius: 28px;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cta span {
+  position: relative;
+}
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #65e2d9, #339ecc);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.cta:hover::before {
+  opacity: 1;
+}
+
+header, section, footer {
+  padding: 0 calc((100vw - 1302px) / 2);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  background-color: #1c2431;
+}
+header .logo {
+  width: 168px;
+}
+header nav {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+header nav a:not(:last-child) {
+  margin-right: 56px;
+}
+
+section {
+  padding-bottom: 140px;
+}
+section:nth-child(1) {
+  position: relative;
+  padding-top: 56px;
+  text-align: center;
+  background-color: #1c2431;
+}
+section:nth-child(1) > * {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+section:nth-child(1) h1 {
+  max-width: 28ch;
+  margin: 28px auto;
+}
+section:nth-child(1) p {
+  max-width: 52ch;
+  margin-bottom: 28px;
+  font-size: 1.25rem;
+}
+section:nth-child(1) .bg {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -70px;
+  z-index: 0;
+}
+section:nth-child(2) {
+  padding-top: 35px;
+  background: linear-gradient(#1c2431 7%, #181f2a 7%);
+}
+section:nth-child(2) .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 140px;
+  grid-row-gap: 91px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+section:nth-child(2) .container > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+section:nth-child(2) .container > *:last-child svg {
+  height: 70px;
+  margin-bottom: 7px;
+}
+section:nth-child(2) svg {
+  height: 77px;
+}
+section:nth-child(2) h2 {
+  margin: 28px 0 7px;
+}
+section:nth-child(3) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 56px;
+  align-items: center;
+  background-color: #181f2a;
+}
+section:nth-child(3) img {
+  margin-left: auto;
+}
+section:nth-child(3) div {
+  padding-top: 56px;
+}
+section:nth-child(3) h2 {
+  max-width: 14ch;
+  margin-bottom: 21px;
+  line-height: 1.2;
+}
+section:nth-child(3) p, section:nth-child(3) a {
+  font-size: 1rem;
+}
+section:nth-child(3) p {
+  max-width: 56ch;
+  margin-bottom: 21px;
+}
+section:nth-child(3) a {
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 3px;
+  color: #65e2d9;
+  border-bottom: 1px solid #65e2d9;
+}
+section:nth-child(3) a svg {
+  width: 16px;
+  margin-left: 4px;
+  margin-bottom: -4px;
+  transition: transform 0.15s;
+}
+section:nth-child(3) a:hover svg {
+  transform: translateX(2px);
+}
+section:nth-child(4) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 42px;
+  padding-top: 35px;
+  background-color: #181f2a;
+}
+section:nth-child(4) .quote-symbol {
+  position: absolute;
+  transform: translate(-14px, -21px);
+}
+section:nth-child(4) .item {
+  padding: 42px 28px 28px;
+  background-color: #202a3c;
+  border-radius: 7px;
+}
+section:nth-child(4) .item > p {
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+section:nth-child(4) .author {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+section:nth-child(4) .author img {
+  width: 28px;
+  margin-right: 14px;
+  border-radius: 50%;
+}
+section:nth-child(4) .author p {
+  font-size: 0.6875rem;
+}
+section:nth-child(4) .author p > * {
+  display: block;
+}
+section:nth-child(4) .author p strong {
+  margin-bottom: 2px;
+}
+section:nth-child(5) {
+  padding-top: 56px;
+  background: linear-gradient(#181f2a 45%, #0b1523 45%);
+}
+section:nth-child(5) .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 721px;
+  padding: 42px 70px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #1c2431;
+  border-radius: 7px;
+}
+section:nth-child(5) h2 {
+  font-size: 2rem;
+}
+section:nth-child(5) p {
+  max-width: 84ch;
+  margin: 14px 0 35px;
+  font-size: 0.875rem;
+}
+section:nth-child(5) form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 28px;
+  width: 100%;
+}
+section:nth-child(5) input, section:nth-child(5) .cta {
+  padding: 14px 28px;
+}
+section:nth-child(5) .cta {
+  font-size: 0.9375rem;
+}
+section:nth-child(5) input[type=email] {
+  outline: none;
+  border: none;
+  border-radius: 28px;
+}
+
+footer {
+  padding-bottom: 98px;
+  background-color: #0b1523;
+}
+footer .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 2fr 1fr 1fr 2fr;
+  grid-template-columns: 4fr 2fr 1fr 1fr 2fr;
+  grid-column-gap: 70px;
+}
+footer .grid svg {
+  height: 17px;
+}
+footer .grid a:not(:last-child) {
+  margin-bottom: 14px;
+}
+footer .grid > *:nth-child(1) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  grid-column-gap: 21px;
+}
+footer .grid > *:nth-child(1) svg {
+  margin-top: 7px;
+}
+footer .grid > *:nth-child(2) > * {
+  display: flex;
+  align-items: center;
+}
+footer .grid > *:nth-child(2) svg {
+  margin-right: 21px;
+}
+footer .grid > *:nth-child(3) a, footer .grid > *:nth-child(4) a {
+  display: block;
+}
+/*# sourceMappingURL=main.HASH_REF_b12cba6ff639b4065705065dc69ce0fe.css.map */
