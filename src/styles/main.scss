@@ -32,6 +32,10 @@ a {
   color: inherit;
 }
 
+.logo {
+  width: 168px;
+}
+
 .cta {
   position: relative;
   padding: 14px 77px;
@@ -77,10 +81,6 @@ header {
   padding-top: 70px;
   background-color: $dark-blue-1;
 
-  .logo {
-    width: 168px;
-  }
-
   nav {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
@@ -116,6 +116,10 @@ section {
       max-width: 52ch;
       margin-bottom: 28px;
       font-size: 1.25rem;
+    }
+
+    .cta {
+      box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
     }
 
     .bg {
@@ -263,6 +267,7 @@ section {
 
   &:nth-child(5) {
     padding-top: 56px;
+    padding-bottom: 98px;
     background: linear-gradient($dark-blue-2 45%, $dark-blue-3 45%);
 
     .card {
@@ -275,6 +280,7 @@ section {
       text-align: center;
       background-color: $dark-blue-1;
       border-radius: 7px;
+      box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
     }
 
     h2 {
@@ -311,27 +317,32 @@ section {
 }
 
 footer {
-  padding-bottom: 98px;
+  padding-bottom: 91px;
+  font-size: 1rem;
   background-color: $dark-blue-3;
+
+  .logo {
+    margin-bottom: 28px;
+  }
 
   .grid {
     display: grid;
-    grid-template-columns: 4fr 2fr 1fr 1fr 2fr;
+    grid-template-columns: 8fr 5fr 6fr 4fr;
     grid-column-gap: 70px;
 
     svg {
-      height: 17px;
-    }
-
-    a:not(:last-child) {
-      margin-bottom: 14px;
+      height: 18px;
     }
 
     & > * {
       &:nth-child(1) {
         display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 21px;
+        grid-template-columns: 11.7px auto;
+        grid-column-gap: 28px;
+
+        p {
+          max-width: 40ch;
+        }
 
         svg {
           margin-top: 7px;
@@ -339,19 +350,64 @@ footer {
       }
 
       &:nth-child(2) {
+        font-size: 0.875rem;
+
         & > * {
           display: flex;
           align-items: center;
+          margin-bottom: 21px;
         }
 
         svg {
-          margin-right: 21px;
+          width: 20px;
+          margin-right: 28px;
+
+          &.phone {
+            height: 18px;
+          }
         }
       }
 
-      &:nth-child(3), &:nth-child(4) {
+      &:nth-child(3) {
+        display: flex;
+
+        & > :first-child {
+          margin-right: 84px;
+        }
+
         a {
           display: block;
+
+          &:not(:last-child) {
+            margin-bottom: 14px;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        a {
+          display: inline-flex;
+          margin-right: 7px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+        }
+
+        .facebook {
+          width: 14px;
+          height: 14px;
+          padding: 8px;
+        }
+
+        .twitter {
+          width: 16px;
+          height: 16px;
+          padding: 7px;
+        }
+
+        .instagram {
+          width: 18px;
+          height: 18px;
+          padding: 6px;
         }
       }
     }

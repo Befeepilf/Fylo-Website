@@ -1293,7 +1293,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/config-default@npm:^2.0.0-alpha.3.1":
+"@parcel/config-default@npm:2.0.0-nightly.236+297087a8":
   version: 2.0.0-nightly.236
   resolution: "@parcel/config-default@npm:2.0.0-nightly.236"
   dependencies:
@@ -1345,7 +1345,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/core@npm:2.0.0-nightly.234, @parcel/core@npm:^2.0.0-alpha.3.2":
+"@parcel/core@npm:2.0.0-nightly.234, @parcel/core@npm:2.0.0-nightly.234+297087a8":
   version: 2.0.0-nightly.234
   resolution: "@parcel/core@npm:2.0.0-nightly.234"
   dependencies:
@@ -1391,7 +1391,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/fs@npm:2.0.0-nightly.236+297087a8, @parcel/fs@npm:^2.0.0-alpha.3.1":
+"@parcel/fs@npm:2.0.0-nightly.236+297087a8":
   version: 2.0.0-nightly.236
   resolution: "@parcel/fs@npm:2.0.0-nightly.236"
   dependencies:
@@ -1408,7 +1408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/logger@npm:2.0.0-nightly.236+297087a8, @parcel/logger@npm:^2.0.0-alpha.3.1":
+"@parcel/logger@npm:2.0.0-nightly.236+297087a8":
   version: 2.0.0-nightly.236
   resolution: "@parcel/logger@npm:2.0.0-nightly.236"
   dependencies:
@@ -1534,7 +1534,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/package-manager@npm:2.0.0-nightly.236+297087a8, @parcel/package-manager@npm:^2.0.0-alpha.3.1":
+"@parcel/package-manager@npm:2.0.0-nightly.236+297087a8":
   version: 2.0.0-nightly.236
   resolution: "@parcel/package-manager@npm:2.0.0-nightly.236"
   dependencies:
@@ -2129,8 +2129,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "Fylo-Website@workspace:."
   dependencies:
+    "@babel/core": ^7.0.0
     autoprefixer: ^9.7.6
-    parcel: next
+    parcel: nightly
     postcss: ^7.0.27
     sass: ^1.26.5
   languageName: unknown
@@ -5938,15 +5939,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"parcel@npm:next":
-  version: 2.0.0-alpha.3.2
-  resolution: "parcel@npm:2.0.0-alpha.3.2"
+"parcel@npm:nightly":
+  version: 2.0.0-nightly.234
+  resolution: "parcel@npm:2.0.0-nightly.234"
   dependencies:
-    "@parcel/config-default": ^2.0.0-alpha.3.1
-    "@parcel/core": ^2.0.0-alpha.3.2
-    "@parcel/fs": ^2.0.0-alpha.3.1
-    "@parcel/logger": ^2.0.0-alpha.3.1
-    "@parcel/package-manager": ^2.0.0-alpha.3.1
+    "@parcel/config-default": 2.0.0-nightly.236+297087a8
+    "@parcel/core": 2.0.0-nightly.234+297087a8
+    "@parcel/diagnostic": 2.0.0-nightly.236+297087a8
+    "@parcel/fs": 2.0.0-nightly.236+297087a8
+    "@parcel/logger": 2.0.0-nightly.236+297087a8
+    "@parcel/package-manager": 2.0.0-nightly.236+297087a8
+    "@parcel/utils": 2.0.0-nightly.236+297087a8
     chalk: ^2.1.0
     commander: ^2.19.0
     get-port: ^4.2.0
@@ -5954,7 +5957,7 @@ fsevents@~2.1.2:
     v8-compile-cache: ^2.0.0
   bin:
     parcel: lib/bin.js
-  checksum: 2/3e04479f40797bd71a846e3a3dc07281bf220fbceadc8f59b49d10840f5ab0787b297f14c0bcef1b78a82c9c0e103851d70288005774df3ebac35ca6fe2e500a
+  checksum: 2/3e7d19726541c982732beb378ffcaf9eeb967c5a88a21e8c8caa5bc30c284247ae823e73e7e3f6b7ae45405d07837b75b4753486b9598276ae44d4edcd74ba7c
   languageName: node
   linkType: hard
 

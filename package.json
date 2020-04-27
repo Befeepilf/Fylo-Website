@@ -1,9 +1,14 @@
 {
   "name": "Fylo-Website",
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "autoprefixer": "^9.7.6",
-    "parcel": "next",
+    "parcel": "nightly",
     "postcss": "^7.0.27",
     "sass": "^1.26.5"
+  },
+  "scripts": {
+    "dev": "yarn parcel ./src/index.html",
+    "build": "rm -rf ./dist && mkdir ./dist && node remove-parcel-helper.js && yarn parcel build --no-cache --public-url ./ ./src/index.html"
   }
 }
