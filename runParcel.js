@@ -20,7 +20,7 @@ else {
 
 function exitHandler() {
   if(dev) {
-    // if helper script was injected restore the original file to not have any unnecessary JS in the production build
+    // if helper script was injected remove it to not have any unnecessary JS in the production build
     let html = fs.readFileSync('./src/index.html', 'utf-8');
     html = html.replace(new RegExp(/<script id="parcel-helper">.+<\/script>\n/), '');
     fs.writeFileSync('./src/index.html', html, 'utf-8');

@@ -77,7 +77,7 @@ header, section, footer {
   }
 
   @media (min-width: $width-lg) {
-    padding: 0 calc((100vw - ($width-lg - 138px)) / 2);
+    padding: 0 calc((100vw - (#{$width-lg} - 138px)) / 2);
   }
 }
 
