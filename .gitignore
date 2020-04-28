@@ -1,4 +1,7 @@
-.yarn/
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
 .parcel-cache/
 .cache/
 dist/
