@@ -8,7 +8,7 @@
     "sass": "^1.26.5"
   },
   "scripts": {
-    "dev": "yarn parcel ./src/index.html",
-    "build": "rm -rf ./dist && mkdir ./dist && node remove-parcel-helper.js && yarn parcel build --no-cache --public-url ./ ./src/index.html"
+    "dev": "NODE_ENV=development node runParcel.js",
+    "build": "rm -rf ./dist && mkdir ./dist && NODE_ENV=production node runParcel.js"
   }
 }
