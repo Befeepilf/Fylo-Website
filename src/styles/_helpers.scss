@@ -1,0 +1,22 @@
+@import "_breakpoints";
+
+// https://css-tricks.com/snippets/sass/strip-unit-function/
+@function strip-unit($val) {
+  @if type-of($val) == 'number' and not unitless($val) {
+    @return $val / ($val * 0 + 1);
+  }
+  @return $val;
+}
+
+// https://css-tricks.com/snippets/css/fluid-typography/
+@mixin fluid($property, $min-val, $max-val) {
+  #{$property}: $min-val;
+
+  @media (min-width: $width-sm) {
+    #{$property}: calc(#{$min-val} + #{strip-unit($max-val - $min-val)} * ((100vw - #{$width-sm}) / #{strip-unit($width-lg - $width-sm)}));
+  }
+
+  @media (min-width: $width-lg) {
+    #{$property}: $max-val;
+  }
+}

@@ -28,7 +28,7 @@ function exitHandler() {
 }
 
 // run Parcel
-const child = spawn('yarn', ['parcel', (dev ? 'serve' : 'build'), './src/index.html']);
+const child = spawn('yarn', ['parcel', (dev ? 'serve' : 'build'), '--no-cache', './src/index.html']);
 
 child.stdout.on('data', chunk => console.log(chunk.toString()));
 child.stderr.on('data', chunk => console.error(chunk.toString()));
