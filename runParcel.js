@@ -4,15 +4,14 @@ const {spawn} = require('child_process');
 // if in dev mode the parcel dev server is started, otherwise the website is built for production
 const dev = process.env.NODE_ENV !== 'production';
 
-let htmlOrig, htmlNew;
 if(dev) {
   console.log("Development mode: starting dev server...");
 
   // we don't use JS for our website; but in order to make Parcel's HMR work we need some JS
   // inject JS snipped in head of index.html
-  htmlOrig = fs.readFileSync('./src/index.html', 'utf-8');
-  htmlNew = htmlOrig.replace('<head>', '<head>\n<script id="parcel-helper">console.log("Parcel helper injected.")</script>');
-  fs.writeFileSync('./src/index.html', htmlNew, 'utf-8');
+  let html = fs.readFileSync('./src/index.html', 'utf-8');
+  html = html.replace('<head>', '<head>\n<script id="parcel-helper">console.log("Parcel helper injected.")</script>');
+  fs.writeFileSync('./src/index.html', html, 'utf-8');
   console.log("Injected Parcel helper");
 }
 else {
@@ -22,7 +21,9 @@ else {
 function exitHandler() {
   if(dev) {
     // if helper script was injected restore the original file to not have any unnecessary JS in the production build
-    fs.writeFileSync('./src/index.html', htmlOrig, 'utf-8');
+    let html = fs.readFileSync('./src/index.html', 'utf-8');
+    html = html.replace(new RegExp(/<script id="parcel-helper">.+<\/script>\n/), '');
+    fs.writeFileSync('./src/index.html', html, 'utf-8');
     console.log("Cleaned up");
   }
 }
