@@ -282,8 +282,8 @@ section {
 
   &:nth-child(4) {
     @include fluid(padding-top, 91px, 35px);
-    @include fluid(padding-left, 49px, 69px);
-    @include fluid(padding-right, 49px, 69px);
+    @include fluid(padding-left, 49px, 133px);
+    @include fluid(padding-right, 49px, 133px);
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 28px;
